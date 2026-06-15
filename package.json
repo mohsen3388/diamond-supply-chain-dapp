@@ -1,0 +1,23 @@
+{
+  "name": "diamond-supply-chain-dapp",
+  "version": "1.0.0",
+  "description": "Diamond supply chain DApp prototype for thesis validation",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "gas": "hardhat test"
+  },
+  "type": "commonjs",
+  "author": "Mohsen Khoram Dastjerdi",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "hardhat": "2.28.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.9.6",
+    "dotenv": "16.4.7"
+  }
+}
