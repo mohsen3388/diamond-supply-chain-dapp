@@ -1,0 +1,14 @@
+Function,GasUsed
+createPurchaseRequest,216502
+publishOrder,59446
+purchaseRoughDiamond,60425
+registerMining,67657
+approveQuality,84825
+issueInsurance,59490
+updateTransport,67571
+inspectShipment,59425
+approveQualityAfterInspection,68008
+gradeDiamond,67679
+updateTransportToSeville,67830
+confirmDelivery,67775
+markRetailReady,59424

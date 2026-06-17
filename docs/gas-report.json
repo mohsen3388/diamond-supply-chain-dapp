@@ -1,0 +1,54 @@
+[
+  {
+    "function": "createPurchaseRequest",
+    "gasUsed": "216502"
+  },
+  {
+    "function": "publishOrder",
+    "gasUsed": "59446"
+  },
+  {
+    "function": "purchaseRoughDiamond",
+    "gasUsed": "60425"
+  },
+  {
+    "function": "registerMining",
+    "gasUsed": "67657"
+  },
+  {
+    "function": "approveQuality",
+    "gasUsed": "84825"
+  },
+  {
+    "function": "issueInsurance",
+    "gasUsed": "59490"
+  },
+  {
+    "function": "updateTransport",
+    "gasUsed": "67571"
+  },
+  {
+    "function": "inspectShipment",
+    "gasUsed": "59425"
+  },
+  {
+    "function": "approveQualityAfterInspection",
+    "gasUsed": "68008"
+  },
+  {
+    "function": "gradeDiamond",
+    "gasUsed": "67679"
+  },
+  {
+    "function": "updateTransportToSeville",
+    "gasUsed": "67830"
+  },
+  {
+    "function": "confirmDelivery",
+    "gasUsed": "67775"
+  },
+  {
+    "function": "markRetailReady",
+    "gasUsed": "59424"
+  }
+]
