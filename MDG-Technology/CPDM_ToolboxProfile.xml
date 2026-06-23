@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="4D559D35-2" name="CPDM_ToolboxProfile" version="1.0" notes="CPDM_ToolboxProfile"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Assossiation" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="CPDM_Profile::AccessibleBy(UML::Association)" type="" description="" unit="" values="" default="acceccible"/>
+					<Tag name="CPDM_Profile::BelongsTo(UML::Association)" type="" description="" unit="" values="" default="belong"/>
+					<Tag name="CPDM_Profile::check(UML::Association)" type="" description="" unit="" values="" default="check"/>
+					<Tag name="CPDM_Profile::communicate(UML::Association)" type="" description="" unit="" values="" default="communicate"/>
+					<Tag name="CPDM_Profile::Contain(UML::Association)" type="" description="" unit="" values="" default="contain"/>
+					<Tag name="CPDM_Profile::control(UML::Association)" type="" description="" unit="" values="" default="control"/>
+					<Tag name="CPDM_Profile::Generates(UML::Association)" type="" description="" unit="" values="" default="generate"/>
+					<Tag name="CPDM_Profile::governs(UML::Association)" type="" description="" unit="" values="" default="govern"/>
+					<Tag name="CPDM_Profile::IsComposedBy(UML::Association)" type="" description="" unit="" values="" default="composed"/>
+					<Tag name="CPDM_Profile::IsInformBy(UML::Association)" type="" description="" unit="" values="" default="inform"/>
+					<Tag name="CPDM_Profile::IsRepresentedBy(UML::Association)" type="" description="" unit="" values="" default="represented"/>
+					<Tag name="CPDM_Profile::Link(UML::Association)" type="" description="" unit="" values="" default="link"/>
+					<Tag name="CPDM_Profile::log(UML::Association)" type="" description="" unit="" values="" default="publishLog"/>
+					<Tag name="CPDM_Profile::outGoing(UML::Association)" type="" description="" unit="" values="" default="outgoing"/>
+					<Tag name="CPDM_Profile::Performed(UML::Association)" type="" description="" unit="" values="" default="perform"/>
+					<Tag name="CPDM_Profile::transport(UML::Association)" type="" description="" unit="" values="" default="transport"/>
+					<Tag name="CPDM_Profile::Used(UML::Association)" type="" description="" unit="" values="" default="use"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Elements" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="CPDM_Profile::Activity(UML::Class)" type="" description="" unit="" values="" default="activity"/>
+					<Tag name="CPDM_Profile::BusinessVar(UML::Dependency)" type="" description="" unit="" values="" default="businessVar"/>
+					<Tag name="CPDM_Profile::Company(UML::Class)" type="" description="" unit="" values="" default="company"/>
+					<Tag name="CPDM_Profile::ComplexActivity(UML::Class)" type="" description="" unit="" values="" default="complexActivity"/>
+					<Tag name="CPDM_Profile::Contract(UML::Class)" type="" description="" unit="" values="" default="contract"/>
+					<Tag name="CPDM_Profile::CriticalActivity(UML::Class)" type="" description="" unit="" values="" default="criticalActivity"/>
+					<Tag name="CPDM_Profile::Decision(UML::Class)" type="" description="" unit="" values="" default="decision"/>
+					<Tag name="CPDM_Profile::Event(UML::Class)" type="" description="" unit="" values="" default="event"/>
+					<Tag name="CPDM_Profile::Indicator(UML::Class)" type="" description="" unit="" values="" default="indicator"/>
+					<Tag name="CPDM_Profile::Inventory(UML::Class)" type="" description="" unit="" values="" default="inventory"/>
+					<Tag name="CPDM_Profile::Logistics(UML::Class)" type="" description="" unit="" values="" default="logistics"/>
+					<Tag name="CPDM_Profile::Metric(UML::Class)" type="" description="" unit="" values="" default="metric"/>
+					<Tag name="CPDM_Profile::Network(IntegratedDB)(UML::Class)" type="" description="" unit="" values="" default="networkDB"/>
+					<Tag name="CPDM_Profile::OKR(UML::Class)" type="" description="" unit="" values="" default="OKR"/>
+					<Tag name="CPDM_Profile::Order(UML::Class)" type="" description="" unit="" values="" default="order"/>
+					<Tag name="CPDM_Profile::Payment(UML::Class)" type="" description="" unit="" values="" default="payment"/>
+					<Tag name="CPDM_Profile::Process(UML::Class)" type="" description="" unit="" values="" default="process"/>
+					<Tag name="CPDM_Profile::Product(UML::Class)" type="" description="" unit="" values="" default="product"/>
+					<Tag name="CPDM_Profile::RiskAssessment(UML::Class)" type="" description="" unit="" values="" default="riskassessment"/>
+					<Tag name="CPDM_Profile::SupplyChainActor(UML::Class)" type="" description="" unit="" values="" default="supplychainActor"/>
+					<Tag name="CPDM_Profile::WareHouse(UML::Class)" type="" description="" unit="" values="" default="warehouse"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

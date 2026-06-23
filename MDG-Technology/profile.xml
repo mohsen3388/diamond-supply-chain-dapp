@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="E8EA720F-9" name="CPDM_Profile" version="1.0" notes="CPDM_Profile"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="AccessibleBy" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="accessLevel" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Activity" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="id" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Actor" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<TaggedValues>
+					<Tag name="actorID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="actorType" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="companyID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="location" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="walletAddress" type="int" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="BelongsTo" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="sourceMultiplicity" type="String" description="" unit="" values="" default=""/>
+					<Tag name="targetMultiplicity" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="BusinessVar" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Dependency">
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="idVar" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="value" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Company" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="address" type="String" description="" unit="" values="" default=""/>
+					<Tag name="companyID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="contactInfo" type="String" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="industryType" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="registrationID" type="String" description="" unit="" values="" default=""/>
+					<Tag name="taxID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="website" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="ComplexActivity" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="id" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Contain" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="order" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Contract" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="contractID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="endDate" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="partiesInvolved" type="String" description="" unit="" values="" default=""/>
+					<Tag name="startDate" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="termsAndConditions" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="CriticalActivity" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="id" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Decision" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="criteria" type="String" description="" unit="" values="" default=""/>
+					<Tag name="decisionMaker" type="String" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="idDecision" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="options" type="List" description="" unit="" values="" default=""/>
+					<Tag name="outCome" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Event" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="eventType" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="idEvent" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="source" type="String" description="" unit="" values="" default=""/>
+					<Tag name="status" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="timeStamp" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Generates" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Indicator" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="idIndicator" type="int" description="" unit="" values="" default=""/>
+					<Tag name="limitedValueLower" type="int" description="" unit="" values="" default=""/>
+					<Tag name="limitedValueTop" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Insurance" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<TaggedValues>
+					<Tag name="coverageAmount" type="double" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="endDate" type="Date" description="" unit="" values="" default=""/>
+					<Tag name="idInsurance" type="int" description="" unit="" values="" default=""/>
+					<Tag name="insuranceType" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="startDate" type="Date" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="InsuranceType" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<TaggedValues>
+					<Tag name="cargo" type="int" description="" unit="" values="" default=""/>
+					<Tag name="Liability" type="int" description="" unit="" values="" default=""/>
+					<Tag name="Transit" type="int" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Inventory" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="inventoryCondition" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="lastStockUpdate" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="locationCode" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="quantityOnHand" type="int" description="" unit="" values="" default=""/>
+					<Tag name="quantityReserved" type="int" description="" unit="" values="" default=""/>
+					<Tag name="sku" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="IsComposedBy" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="sourceMultiplicity" type="String" description="" unit="" values="" default=""/>
+					<Tag name="targetMultiplicity" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="IsInformBy" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="IsRepresentedBy" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="representationType" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Link" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Logistics" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="costStructure" type="String" description="" unit="" values="" default=""/>
+					<Tag name="coverageArea" type="String" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="Dimension" type="float" description="" unit="" values="" default=""/>
+					<Tag name="idLogistics" type="int" description="" unit="" values="" default=""/>
+					<Tag name="logisticsUnitID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="Material" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="operatingHours" type="String" description="" unit="" values="" default=""/>
+					<Tag name="productID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="Security Level" type="String" description="" unit="" values="" default=""/>
+					<Tag name="serviceLevel" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="Type" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Metric" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="idmetric" type="int" description="" unit="" values="" default=""/>
+					<Tag name="measure" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Network(IntegratedDB)" notes="&lt;a href=&quot;C:\Users\user\Documents\db.png&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;C:\Users\user\Documents\db.png&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; " cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="accessRule" type="String" description="" unit="" values="" default="All participants"/>
+					<Tag name="dataImmutability" type="boolean" description="" unit="" values="true,false" default=""/>
+					<Tag name="eventRetentionPolicy" type="String" description="" unit="" values="" default="10 Years"/>
+					<Tag name="governanceModel" type="String [Enum]" description="" unit="" values="" default="Consortium"/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="networkID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="networkType" type="String" description="" unit="" values="" default="SharedLedger or CentralizedRepository or Hybrid"/>
+					<Tag name="operator" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="OKR" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="calculationFormula" type="String" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="idOKR" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="OperatorActivity" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="completionStatus" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="estimatedDuration" type="int" description="" unit="" values="" default=""/>
+					<Tag name="id" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="requiredSkills" type="String" description="" unit="" values="" default=""/>
+					<Tag name="responsiblePosition" type="String[Enum]" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="OrchestrationActivity" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="duration" type="int" description="" unit="" values="" default=""/>
+					<Tag name="executionTime" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="id" type="int" description="" unit="" values="" default=""/>
+					<Tag name="machineActivityType" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="machineID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="priority" type="int" description="" unit="" values="" default=""/>
+					<Tag name="status" type="String[Enum]" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Order" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="creationDate" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="dueTime" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="idOrder" type="int" description="" unit="" values="" default=""/>
+					<Tag name="orderStatus" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="priority" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Payment" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="amount" type="double" description="" unit="" values="" default=""/>
+					<Tag name="currency" type="String" description="" unit="" values="" default=""/>
+					<Tag name="description" type="int" description="" unit="" values="" default=""/>
+					<Tag name="idpayment" type="int" description="" unit="" values="" default=""/>
+					<Tag name="insuredDate" type="Date" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="network" type="String" description="" unit="" values="" default=""/>
+					<Tag name="paymentStatus" type="boolean" description="" unit="" values="true,false" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Performed" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Process" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="duration" type="Time" description="" unit="" values="" default=""/>
+					<Tag name="idprocess" type="String" description="" unit="" values="" default=""/>
+					<Tag name="input" type="String" description="" unit="" values="" default=""/>
+					<Tag name="location" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="output" type="String" description="" unit="" values="" default=""/>
+					<Tag name="processType" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Product" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="currency" type="String" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="idproduct" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="unitCost" type="double" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="RiskAssessment" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="idRisk" type="int" description="" unit="" values="" default=""/>
+					<Tag name="impact" type="float" description="" unit="" values="" default=""/>
+					<Tag name="likelihood" type="int" description="" unit="" values="" default=""/>
+					<Tag name="mitigationStrategy" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="owner" type="String" description="" unit="" values="" default=""/>
+					<Tag name="riskEvent" type="String[Enum]" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="SupplyChainActor" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="actorID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="actorType" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="companyID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="contractInfo" type="String" description="" unit="" values="" default=""/>
+					<Tag name="department" type="String" description="" unit="" values="" default=""/>
+					<Tag name="description" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="position" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="role" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="TransportActivity" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="carrier" type="String" description="" unit="" values="" default=""/>
+					<Tag name="companyID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="endTime" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="idTransport" type="int" description="" unit="" values="" default=""/>
+					<Tag name="Mode of Transport" type="String" description="" unit="" values="" default=""/>
+					<Tag name="scheduledArrival" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="scheduledDeparture" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="startLocation" type="String" description="" unit="" values="" default=""/>
+					<Tag name="status" type="String[Enum]" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Used" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="WareHouse" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="capacity" type="double" description="" unit="" values="" default=""/>
+					<Tag name="companyID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="idWarehouse" type="int" description="" unit="" values="" default=""/>
+					<Tag name="location" type="String" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="operatingHours" type="String" description="" unit="" values="" default=""/>
+					<Tag name="securityLevel" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="storageType" type="String[Enum]" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="WareHouseActivity" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="description" type="String" description="" unit="" values="" default=""/>
+					<Tag name="endTime" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="idWarehouseActivity" type="int" description="" unit="" values="" default=""/>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="priority" type="int" description="" unit="" values="" default=""/>
+					<Tag name="startDate" type="DateTime" description="" unit="" values="" default=""/>
+					<Tag name="status" type="String[Enum]" description="" unit="" values="" default=""/>
+					<Tag name="warehouseActivityType" type="String[Enum]" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="check" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="checkInventory" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="availableQuantity" type="int" description="" unit="" values="" default=""/>
+					<Tag name="netAvailable" type="int" description="" unit="" values="" default=""/>
+					<Tag name="productID" type="int" description="" unit="" values="" default=""/>
+					<Tag name="productName" type="String" description="" unit="" values="" default=""/>
+					<Tag name="representedQuantity" type="int" description="" unit="" values="" default=""/>
+					<Tag name="status" type="String[Enum]" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="communicate" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="control" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="governs" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="log" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="outGoing" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="produce" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="reject" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="submit" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="transport" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="name" type="String" description="" unit="" values="" default=""/>
+					<Tag name="ruleType" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

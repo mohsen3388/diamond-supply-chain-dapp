@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="3DB0D375-5" name="CPDM_DiagramProfile" version="1.0" notes="CPDM_DiagramProfile"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="CPDM" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Activity">
+						<Property name="alias" value="CPDM Collaborative Process Diagram"/>
+						<Property name="diagramID" value="CPDM_Diagram"/>
+						<Property name="toolbox" value="CPDM_ToolboxProfile"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>
