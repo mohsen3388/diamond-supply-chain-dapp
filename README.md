@@ -1,41 +1,26 @@
-# Diamond Supply Chain DApp
+# Diamond Supply Chain DApp and Model-Driven Engineering Artifacts
 
-## Overview
+This repository contains the technical artifacts developed for the PhD thesis:
 
-This repository contains the implementation developed as part of the PhD thesis:
+**A model-driven and blockchain-supported approach to improve the definition and execution of collaborative supply chain processes**
 
-"A Model-Driven and Blockchain-Supported Approach to Improve the Definition and Execution of Collaborative Supply Chain Processes"
+The repository includes both the blockchain-based prototype and the model-driven engineering artifacts used to support the thesis proposal.
 
-University of Seville
+## Repository Overview
 
-Author:
-Mohsen Khoram Dastjerdi
+This repository contains:
 
-## Main Features
-
-- ERC721 tokenized diamonds
-- Role-based access control
-- Blockchain traceability
-- Smart contract lifecycle management
-- Hardhat deployment
-- Unit testing
-- Gas consumption analysis
-
-## Technologies
-
-- Solidity
-- Hardhat
-- OpenZeppelin
-- Ethereum
-- GitHub
-
-## Repository Structure
-
-contracts/
-scripts/
-test/
-docs/
+- Solidity smart contracts for the diamond supply-chain scenario
+- Hardhat test cases and deployment scripts
+- Prototype DApp implementation
+- UML Profiles for the proposed metamodels
+- Enterprise Architect MDG Technology artifacts
+- Supporting files for the CPDM and CPEM modeling environment
 
 ## Academic Purpose
 
-This prototype was developed exclusively for research and validation purposes.
+The repository supports the reproducibility of the thesis by providing the implementation artifacts used in Chapters 6 and 7.
+
+Chapter 6 artifacts include the UML Profiles and MDG Technology developed to support the modeling environment in Enterprise Architect.
+
+Chapter 7 artifacts include the generated smart contracts, test scripts, deployment resources, and DApp prototype used during the experimental validation.
